@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+
+    body {
+        font-size: 1.6rem;
+        position: relative;
+
+        nav {
+            min-height: 60px;
+
+            navbar-brand {
+
+                h1 {
+                    text-transform: uppercase !important;
+                }
+
+            }
+        }
+    }
+}

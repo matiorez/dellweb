@@ -1,0 +1,22 @@
+@import '../../../assets/vars.scss';
+
+:host {
+  nav {
+    min-height: 60px;
+
+    .container{
+      >a>img{
+        @include size(150px);
+      }
+    }
+  }
+
+  p-carousel{
+    
+    &::ng-deep .custom-carousel{
+      .p-carousel-content{
+        max-width:150px;
+      }
+    }
+  }
+}

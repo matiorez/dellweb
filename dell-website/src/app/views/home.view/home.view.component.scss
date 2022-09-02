@@ -1,0 +1,15 @@
+@import '../../../assets/vars.scss';
+:host {
+    header {
+      position: relative;
+      @include size(100%,100vh);
+      background-image: url("/assets/images/calculator-385506.webp");
+      background-position: center;
+      background-size: cover;
+      z-index: 0;
+
+      h1{
+        text-transform: uppercase;
+      }
+    }
+  }

@@ -1,0 +1,20 @@
+@import '../../../assets/vars.scss';
+.lang {
+    position: fixed;
+    top: 90px;
+    @include flex(column, flex-start, center);
+    @include size(50px);
+    z-index: 2;
+
+    >img {
+      padding: 5px;
+      cursor: pointer;
+
+      @include size(45px);
+
+
+      &:hover {
+        border: 1px solid red;
+      }
+    }
+  }

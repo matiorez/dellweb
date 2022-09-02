@@ -1,0 +1,24 @@
+<nav id='navbar-example' class="navbar navbar-expand-lg navbar-primary
+    bg-danger bg-gradient  py-1 fixed-top">
+  <div class="container">
+    <a [routerLink]="'/'" class="navbar-brand px-4 text-light">
+      <img src="../../../assets/icons/logov2.png" alt="">
+      <div>{{ 'navbar.currency' | translate}}</div>
+      <p-carousel [value]="rates" styleClass="custom-carousel" [showIndicators]="false" [showNavigators]="false"  [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+        <ng-template let-rate pTemplate="item">  
+          <h4 class="p-mb-1">{{rate.code + ": "+ rate.mid}}</h4>
+        </ng-template>
+    </p-carousel>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <fa-icon [icon]="faBars" class="text-light"></fa-icon>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a *ngFor="let navLink of navLinks; let i = index" [attr.data-index]="i" class="nav-item nav-link link-light"
+          [routerLink]="navLink">{{'nav.link' + i   | translate  }} </a>
+      </div>
+    </div>
+  </div>
+</nav>

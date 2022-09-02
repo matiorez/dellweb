@@ -1,0 +1,30 @@
+:host{
+    section {
+        min-height: 90vh;
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+
+        li {
+            font-size: 2.3rem;
+        }
+
+        .card {
+            font-size: 4.6rem;
+
+        }
+
+        p {
+            font-size: 2.3rem;
+            
+        }
+
+        .parking {
+            margin-top: 100px;
+            font-size: 4.6rem;
+        }
+    }
+}

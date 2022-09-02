@@ -1,0 +1,13 @@
+<section  class="bg-danger bg-gradient">
+  <div>
+      <p *ngFor="let item of footerItems">
+        <span>
+          <div class="back-ground">
+            <fa-icon [icon]="item.icon" class="text-dark"></fa-icon> 
+            <div *ngIf="!!item.isTel" class="is-support" [ngClass]=" isSupportActive(9,15) ? 'is-open': 'is-close'"></div>
+          </div>
+        </span>
+        {{ item.text | translate}}      
+      </p>   
+  </div>
+</section>

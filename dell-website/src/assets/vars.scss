@@ -1,0 +1,44 @@
+@mixin size($width, $height:auto) {
+  height: $height;
+  width: $width;
+}
+
+@mixin iconSize($width, $height:$width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin const-height($height:auto) {
+  max-height: $height;
+  min-height: $height;
+  height: $height;
+}
+
+
+
+@mixin flex($fd:row, $jc:flex-start, $ai:flex-start, $wr:0) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+
+  @if $wr==1 {
+    flex-wrap: wrap;
+  }
+
+  @else if $wr==0 {
+    flex-wrap: nowrap;
+  }
+
+  @else if $wr==-1 {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  @include iconSize(100%);
+  background-color: rgba(0, 0, 0, .5);
+  z-index: -1;
+}

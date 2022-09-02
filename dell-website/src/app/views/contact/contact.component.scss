@@ -1,0 +1,19 @@
+@import '../../../assets/vars.scss';
+:host{
+    margin-top: 60px;
+    header {
+        position: relative;
+        @include size(100%,30vh);
+     
+        background-image: url("/assets/images/phone-g12f44b0a2_1920.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+      }
+
+    #kontakt {
+        font-size: 2.3rem;
+        min-height: 90vh;
+    }
+}
