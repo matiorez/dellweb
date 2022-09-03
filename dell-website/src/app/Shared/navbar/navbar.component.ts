@@ -17,7 +17,7 @@ export class NavbarComponent implements OnInit {
   date: string = "";
 
   constructor(protected translationService: TranslateService, private currencyService:CurrencyService) { }
-  navLinks = ['/contact', '/aboutus'];
+  navLinks = ['/contact', '/aboutus', '/services'];
   faBars = faBars;
   responsiveOptions = [
     {
@@ -46,7 +46,7 @@ export class NavbarComponent implements OnInit {
     this.currencyService.getCurrency().subscribe(result => {
       this.rates = result[0].rates;
       this.date = result[0].effectiveDate;
-      
+
     });
   }
 

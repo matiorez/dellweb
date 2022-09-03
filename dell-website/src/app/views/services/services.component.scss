@@ -1,0 +1,34 @@
+:host{
+  section{
+    padding:150px 50px;
+    min-height: 100vh;
+
+    p-accordion{
+      &::ng-deep .p-component{
+        .p-accordion-header{
+          > a:hover{
+            background-color: #FF4050;
+          }
+
+          a, .p-highlight a{
+            background-color: #dc3545;
+
+            >span{
+              font-size: 1.8rem;
+              color:white;
+            }
+          }
+
+        }
+
+        li{
+          font-size: 1.6rem;
+        }
+
+
+
+      }
+
+    }
+  }
+}

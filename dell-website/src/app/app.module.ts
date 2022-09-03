@@ -16,13 +16,15 @@ import { HomeViewComponent } from './views/home.view/home.view.component';
 import { AboutUsComponent } from './views/about-us/about-us.component';
 import { CommonModule } from '@angular/common';
 import { ContactComponent } from './views/contact/contact.component';
+import { ServicesComponent } from './views/services/services.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeViewComponent,
     AboutUsComponent,
-    ContactComponent
+    ContactComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
