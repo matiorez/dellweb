@@ -1,7 +1,14 @@
+@import '../../../assets/vars.scss';
+
 :host{
   section{
+    position: relative;
+    background-position: center;
+    background-size: cover;
     padding:150px 50px;
     min-height: 100vh;
+    background-image: url(/assets/images/office-work-3293203_1920.jpg);
+    z-index: 0;
 
     p-accordion{
       &::ng-deep .p-component{
@@ -24,11 +31,7 @@
         li{
           font-size: 1.6rem;
         }
-
-
-
       }
-
     }
   }
 }
