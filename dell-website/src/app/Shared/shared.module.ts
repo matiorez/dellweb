@@ -9,6 +9,7 @@ import { LanguagesListComponent } from './languages-list/languages-list.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {CarouselModule} from 'primeng/carousel';
 import {ButtonModule} from 'primeng/button';
+import {AccordionModule} from 'primeng/accordion';
 
 
 
@@ -23,6 +24,7 @@ import {ButtonModule} from 'primeng/button';
     BrowserAnimationsModule,
     CarouselModule,
     ButtonModule,
+    AccordionModule
   ],
   exports: [
     CommonModule,
@@ -30,7 +32,8 @@ import {ButtonModule} from 'primeng/button';
     FooterComponent,
     RouterModule,
     FontAwesomeModule,
-    LanguagesListComponent
+    LanguagesListComponent,
+    AccordionModule
   ],
   providers: []
 })
