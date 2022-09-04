@@ -11,7 +11,7 @@ export class FooterComponent implements OnInit {
   faPhone = faPhone;
   faFax = faFax;
   faAt = faAt;
-  footerItems = [{icon:faPhone, text:'footer.phone',isTel:true}, {icon:faAt, text:'footer.mail'}]
+  footerItems = [{icon:faPhone, text:'footer.phone', isTel:true}, {icon:faAt, text:'footer.mail', isTel:false}]
 
   constructor() { }
 
