@@ -2,6 +2,7 @@
   "home.title": "BIURO RACHUNKOWE <br/> &#34;Dell&#34; SP. z o. o.",
   "HOME.SELECT": "Wybierz swój język : ",
   "HOME.LINK": "Komponent",
+  "home.text1":"Rozmowa w cztery oczy",
   "nav.link0": "Kontakt",
   "nav.link1": "O nas",
   "nav.link2": "Usługi",
@@ -54,5 +55,6 @@
   "service.wages.content1.body8":"Sporządzanie informacji do ZUS (ZUS IWA)",
   "service.wages.content1.body9":"Sporządzanie imiennych raportów osób ubezpieczonych (RMUA)",
   "service.wages.content1.body10":"Obsługa kontroli Urzędów Skarbowych i Zakładu Ubezpieczeń Społecznych"
+
 
 }
